@@ -125,3 +125,12 @@ Delete `seen.json` if you want the scraper to re-alert on recent stories.
 - For personal monitoring only
 
 Enjoy the alerts. When the next “theater-clearing fart” or “capybara lobbyist” drops, you’ll know first.
+
+## Tests
+
+```bash
+pip install -r requirements-test.txt
+pytest tests
+```
+
+18 tests cover the LLM judge in `meme_judge.py`: the hard suppression list (real harm such as deaths, disasters and crashes is always blocked, while idioms like "declares war on aggressive turkey" pass through), score parsing and clamping, refusal on malformed model output, and the judgment cache. The model server is mocked and the network is blocked. 4/4 deliberate mutations are caught.
