@@ -1,5 +1,7 @@
 # Viral Meme Potential News Scraper
 
+[![CI](https://github.com/lowriskbtc/meme-news-scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/lowriskbtc/meme-news-scraper/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-3776AB?logo=python&logoColor=white) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 Monitors odd / bizarre / high-meme-potential news from RSS feeds, scores stories, and sends alerts the moment something fresh and absurd appears.
 
 ## Features
